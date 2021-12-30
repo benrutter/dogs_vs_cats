@@ -1,6 +1,6 @@
 # Dogs vs Cats 🐶🐱
 
-Model to detect binary categories of similar images. Used on Kaggle's Dog/Kat competition dataset with ~80% accuracy.
+Model to detect binary categories of similar images. It's designed to train relatively quicky (at least for a neural-network model) without large hardware requirements. Used on Kaggle's Dog/Kat competition dataset with ~80% accuracy.
 
 This repo can be used for any similar problem if set up with:
 
