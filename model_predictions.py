@@ -5,7 +5,7 @@ import pandas as pd
 label_generator = ImageDataGenerator(rescale=1.0/255)
 label_iterator = label_generator.flow_from_directory(
     'data/to_predict',
-    target_size=(120, 120),
+    target_size=(128, 128),
     batch_size=32,
     shuffle=False,
     class_mode=None,
@@ -14,6 +14,7 @@ label_iterator = label_generator.flow_from_directory(
 model = load_model('cnn', compile=True)
 
 labels = model.predict(label_iterator)
+labels = labels.clip(min=0.02, max=0.98)
 
 subm = pd.read_csv('sample_submission.csv')
 ids = [int(x.split("\\")[1].split(".")[0]) for x in label_iterator.filenames]
