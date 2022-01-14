@@ -4,8 +4,8 @@ Models to detect binary categories of similar images. It's designed to train rel
 
 There are two models here, a pre-trained resnet, and a convolutional network from scratch.
 
-The from-scratch network has been used on Kaggle's Dog/Kat competition dataset with 80%+ accuracy, rated on Kaggle's external test set as 0.37063 log loss.
-The pretrained resnet performs on the same dataset with 95%+ accuracy, rated on Kaggle's external test set as 0.11149 log loss.
+The from-scratch network has been used on Kaggle's Dog/Kat competition dataset with ~80% accuracy, rated on Kaggle's external test set as 0.37063 log loss.
+The pretrained resnet performs on the same dataset with ~95% accuracy, rated on Kaggle's external test set as 0.11149 log loss.
 
 This repo can be used for any similar problem if set up with:
 
